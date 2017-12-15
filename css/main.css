@@ -1,3 +1,33 @@
-/*
- * Estilos de tu proyecto
- */
+body{
+
+}
+
+nav{
+
+}
+
+.logo{
+  display:inline-block;
+  width: 10%;
+  height:5%;
+}
+
+
+.fa fa-search{
+  display: inline-block;
+}
+
+#user{
+   border-radius: 0.9em;
+  -moz-border-radius: 0.9em;
+  -webkit-border-radius: 0.9em;
+  color: #ffffff;
+  display: inline-block;
+  text-align: center;
+  width: 1.5em;
+  height: 1.5em;
+  background: #c4c2c2;
+  color:black;
+  margin-top: 1%;
+  padding: 2px, 2px, 2px, 2px;
+}
