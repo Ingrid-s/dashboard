@@ -4,39 +4,109 @@
     <meta charset="utf-8">
     <title>Data Dashboard</title>
     <link rel='stylesheet' href='css/main.css'/>
-      <link rel="stylesheet" href="assets/icons/font-awesome.css">
-
+    <link rel="stylesheet" href="assets/icons/font-awesome.css">
   </head>
+
   <body>
     <header>
-	<nav>
-					<ul class="firstmenu">
-            <a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
-						<li><a href="#">Add student </a></li>
-						<li><a href="#">Delete student </a></li>
-						<li><a href="#">Add sprint</a></li>
-					</ul>
-
-          <div class="logo">
-            <img src="assets/images/logo-laboratoria.svg"alt="logo Laboratoria">
-          </div>
-
-          <div class="search">
-					<input type="text">
-					<i class="fa fa-search" aria-hidden="true"></i>
-				</div>
-        <ul class="container-left">
-					
-					<li id="user"><span href="#"> LB</span></li>
+	    <nav class"first">
+				<ul class="firstmenu">
+          <a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+					<li><a href="#">Add student </a></li>
+					<li><a href="#">Delete student </a></li>
+					<li><a href="#">Add sprint</a></li>
 				</ul>
 
-		</nav>
-	</header>
-<!-- despues tenemos un elemento nav (menú horizontal con CITY, STUDENTS, TEACHERS, cada uno debe desplegar opciones y cuando se clikea debe abrir la nueva sección)-->
-<!--despues viene una sección o container que incluirá todos los otros elementos>
+        <div class="logo">
+          <img src="assets/images/logo-laboratoria.svg"alt="logo Laboratoria">
+        </div>
 
-<!-- cada canvas esta contenida en un main, tiene un titulo de la gráfica.>
-<!--en el centro tenemos un boton que nos despliega un menu para Add student, remove student, add sprint>
+        <div class="search">
+					<input type="text">
+					<i class="fa fa-search" aria-hidden="true"></i>
+			  </div>
+        <ul class="container-left">
+					<li id="user"><span href="#"> LB</span></li>
+				</ul>
+		</nav>
+    </header>
+    <section class="secondMenu">
+      <nav class="second">
+        <ul>
+          <li><a href="#"><strong>OVERVIEW</strong> </a></li>
+          <li class="submenu">
+            <a href="#"><span class="icon-rocket"></span><strong>SEDE/ GEN </strong><span class="caret icon-arrow-down6"></span></a>
+            <ul class="city">
+              <li><a href="#">LIMA <span class="icon-dot"></span></a></li>
+              <li><a href="#">Arequipa <span class="icon-dot"></span></a></li>
+              <li><a href="#">Santiago <span class="icon-dot"></span></a></li>
+              <li><a href="#">CDMX <span class="icon-dot"></span></a></li>
+            </ul>
+          <li><a href="#"><strong>STUDENTS</strong></a></li>
+          <li><a href="#"><strong>TEACHERS</strong></a></li>
+        </ul>
+      </nav>
+      <main>
+      <section>
+        <h3></h3>
+        <p></p>
+        <p></p>
+        <!--aquí debe ir la gráfica Enrollment-->
+      </section>
+
+      <section>
+        <h3></h3>
+        <p></p>
+        <p></p>
+        <!--aquí debe ir la gráfica Archivement-->
+      </section>
+
+      <section>
+        <h3></h3>
+        <p></p>
+        <p></p>
+        <!--aquí debe ir la gráfica NPS-->
+      </section>
+
+      <section>
+        <h3></h3>
+        <p></p>
+        <p></p>
+        <!--aquí debe ir la gráfica Tech Skills-->
+      </section>
+
+      <section>
+        <h3></h3>
+        <p></p>
+        <p></p>
+
+        <!--aquí debe ir la gráfica Life Skills-->
+      </section>
+
+      <section>
+        <h3></h3>
+        <p></p>
+        <p></p>
+        <!--aquí debe ir la gráfica Student Satisfation-->
+      </section>
+
+      <section>
+        <h3></h3>
+        <p></p>
+        <p></p>
+        <!--aquí debe ir la gráfica Teacher raiting-->
+      </section>
+
+      <section>
+        <h3></h3>
+        <p></p>
+        <p></p>
+        <!--aquí debe ir la gráfica Jedi master raiting-->
+      </section>
+
+      </main>
+
+
     <!-- Base de datos -->
 		<script src="./js/data.js"></script>
 		<!-- Aquí va tus archivos JS -->
