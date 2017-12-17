@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <title>Data Dashboard</title>
     <link rel='stylesheet' href='css/main.css'/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="assets/icons/font-awesome.css">
+    <script src="https://use.fontawesome.com/024c0ec3b6.js"></script>
   </head>
 
   <body>
@@ -21,26 +23,60 @@
           <img src="assets/images/logo-laboratoria.svg"alt="logo Laboratoria">
         </div>
 
-        <div class="search">
-					<input type="text">
-					<i class="fa fa-search" aria-hidden="true"></i>
-			  </div>
-        <ul class="container-left">
-					<li id="user"><span href="#"> LB</span></li>
-				</ul>
-		</nav>
+          <div class="search-box">
+            <span class="icon"><i class="fa fa-search"></i></span>
+            <input type="search"  placeholder="search" />
+          </div>
+
+          <ul class="container-left">
+					  <li id="user"><span href="#"> LB</span></li>
+				  </ul>
+		  </nav>
     </header>
+
     <section class="secondMenu">
       <nav class="second">
         <ul>
           <li><a href="#"><strong>OVERVIEW</strong> </a></li>
           <li class="submenu">
-            <a href="#"><span class="icon-rocket"></span><strong>SEDE/ GEN </strong><span class="caret icon-arrow-down6"></span></a>
+            <a href="#"><span class="City-Gen"></span><strong>SEDE/ GEN </strong><span class="caret icon-arrow-down6"></span></a>
             <ul class="city">
-              <li><a href="#">LIMA <span class="icon-dot"></span></a></li>
-              <li><a href="#">Arequipa <span class="icon-dot"></span></a></li>
-              <li><a href="#">Santiago <span class="icon-dot"></span></a></li>
-              <li><a href="#">CDMX <span class="icon-dot"></span></a></li>
+              <li><a href="#">LIMA <span class="LIME"></span></a></li>
+              <ul <ul class="genLima">
+                <li><a href="#">2015 -I <span class="2015-I"></span></a></li>
+                <li><a href="#">2015 -II <span class="2015-II"></span></a></li>
+                <li><a href="#">2016 -I<span class="2016-I"></span></a></li>
+                <li><a href="#">2016 -II <span class="2016-II"></span></a></li>
+                <li><a href="#">2017 -I <span class="2017-I"></span></a></li>
+                <li><a href="#">2017-II <span class="2017-II"></span></a></li>
+              </ul>
+              <li><a href="#">AREQUIPA <span class="AREQUIPA"></span></a></li>
+                <ul <ul class="genAre">
+                  <li><a href="#">2015 -I <span class="2015-I"></span></a></li>
+                  <li><a href="#">2015 -II <span class="2015-II"></span></a></li>
+                  <li><a href="#">2016 -I<span class="2016-I"></span></a></li>
+                  <li><a href="#">2016 -II <span class="2016-II"></span></a></li>
+                  <li><a href="#">2017 -I <span class="2017-I"></span></a></li>
+                  <li><a href="#">2017-II <span class="2017-II"></span></a></li>
+              </ul>
+              <li><a href="#">SANTIAGO <span class="SANTIAGO"></span></a></li>
+              <ul <ul class="genSan">
+                <li><a href="#">2015 -I <span class="2015-I"></span></a></li>
+                <li><a href="#">2015 -II <span class="2015-II"></span></a></li>
+                <li><a href="#">2016 -I<span class="2016-I"></span></a></li>
+                <li><a href="#">2016 -II <span class="2016-II"></span></a></li>
+                <li><a href="#">2017 -I <span class="2017-I"></span></a></li>
+                <li><a href="#">2017-II <span class="2017-II"></span></a></li>
+            </ul>
+              <li><a href="#">CDMX <span class="CDMX"></span></a></li>
+              <ul <ul class="genMex">
+                <li><a href="#">2015 -I <span class="icon-dot"></span></a></li>
+                <li><a href="#">2015 -II <span class="icon-dot"></span></a></li>
+                <li><a href="#">2016 -I<span class="icon-dot"></span></a></li>
+                <li><a href="#">2016 -II <span class="icon-dot"></span></a></li>
+                <li><a href="#">2017 -I <span class="icon-dot"></span></a></li>
+                <li><a href="#">2017-II <span class="icon-dot"></span></a></li>
+            </ul>
             </ul>
           <li><a href="#"><strong>STUDENTS</strong></a></li>
           <li><a href="#"><strong>TEACHERS</strong></a></li>
@@ -48,9 +84,9 @@
       </nav>
       <main>
       <section>
-        <h3></h3>
-        <p></p>
-        <p></p>
+        <h3>Enrollment</h3>
+        <p>847</p>
+        <p>78%</p>
         <!--aquí debe ir la gráfica Enrollment-->
       </section>
 
