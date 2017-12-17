@@ -48,7 +48,7 @@ header{
   float: right;
   display:inline-block;
   padding-right: 10%;
-  padding:0;
+  padding-right: 3%;
   margin:0;
 }
 .search-box input{
