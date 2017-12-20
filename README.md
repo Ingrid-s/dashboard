@@ -5,23 +5,38 @@
 * **Unidad:** _Producto final_
 
 ***
+Producto:  Dashboard
+Un dashboard es una representación gráfica de las principales métricas o KPIs (indicador clave o medidor de desempeño) requeridos por el cliente,   estas, nos muestran datos duros  sobre tòpicos importantes para la toma de acciones pertinentes.
+El objetivo de nuestro producto entonces es conocer presentar los datos para un rápido análisis y con base a esto, fijar líneas de acción a seguir.
+Proporciona una herramienta de trabajo que permite al TM (Training Manager)  visualizar y hacer estimaciones razonables sobre datos reales del desempeño de las estudiantes de Laboratoria  para la toma de decisiones y apoyarlo en su aprendizaje.
 
-## Flujo de trabajo
 
-1. Debes realizar un [**fork**](https://gist.github.com/ivandevp/1de47ae69a5e139a6622d78c882e1f74)
-   de este repositorio.
+Usuarios meta:
+Training Managers . Esta a cargo de de la coordinación del Bootcamp, identificará las necesidades de capacitación y desarrollo e impulsará iniciativas adecuadas.
 
-2. Luego deberás **clonar** tu fork en tu máquina. Recuerda que el comando a usar
-   es `git clone` y su estructura normalmente se ve así:
+Acerca de Dashboard Analyzer
+Esta es la visualización de datos en un tablero centralizado enfocados en las necesidades reales del usuario, con un diseño intuitivo, sencillo de usar  y con potentes funciones para permitir a las partes interesadas descubrirla información que necesitan en el momento preciso  y comunicarlos a su equipo, una  herramienta que pueda ser actualizada, facilmente.
 
-   ```bash
-   git clone https://github.com/<nombre-de-usuario>/freelancer.git
-   ```
+⦁ Ventajas competitivas
+Adaptabilidad del cliente, la simplicidad de acceso, vista de indicadores de manera ordenada y armónica en cuanto a espacios.
+Es un producto único y 100% customisable.
+El usuario no requiere grandes  conocimientos técnicos,  es intuitivo y escalable.
 
-3. Cuando hayas terminado tu producto, envía un Pull Request a este repositorio
-   (puedes solicitar apoyo de tus profes para este paso).
+⦁  Implementación:
+Se progreso en lo que pensamos puede ser la primera etapa de esta herramienta.
+Se piensa que sea responsive para que se tenga acceso a la informaciòn en cualquier tipo de dispositivo y lugar.
 
-> Nota: No olvides que es una buena práctica describir tu proyecto en este
-> archivo `README.md` y también desplegar tu web a Github Pages :smiley:.
+⦁	Mantenimiento
+Esta planeada la construcción de la vista principal de login.
 
-![sketch](./assets/images/sketch_data-dashboard.png)
+Funcionalidad, se tiene contemplado, además de los eventos "click" tener eventos hover para resaltar tópicos más importantes al pasar por ellos, lo pensamos en relación con los colores asociados a un semáforo, donde el verde representa números favorables, el amarillo aquellos indicadores en los que hay que prestar atención o se acercan a la mínima cifra requerida y el rojo para aquellas cifras que estan por debajo de lo esperado o que no son favorables.
+
+Ejemplo de uso: Si la puntuación de los teachers  lo esperado, se les puede incentivar  o dar un reconocimiento, ya que con un vistazo, podemos identificar de forma rápida los promedios superados.
+En un futuro la herramienta podría ahondar en el análisis de información de fuentes externas (como las encuestas de satisfacción al final de cada srpint) sin multiples y engorrosos archivos de excel.
+Valor agregado, que los gráfico se podrán exportar en diferentes formatos e incluso imprimirlos -si se requiere- siempre con datos reales y actualizados.
+
+UX responde a un portal de diseño limpio y en compliance con la imagen corporativa.
+UI es importante del menú global que contiene eventos on click, hover, elementos del sitio detonaran el despliegue o interacciòn de la informaciòn.
+
+
+![sketch](./assets/images/sketch_data-dashboardr2.png)

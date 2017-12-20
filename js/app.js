@@ -13,14 +13,23 @@
 
  //listar las estudiant@s de la generacion
  var obtenerData= function( students, sede, generacion){
-   document.getElementByClass("container1").innerHTML="";
+   document.getElementByClassName("container1").innerHTML="";
    var show = datps[sede]["data-generation"][generacion]["students"];
 
- for (var i=0 ; i<data-sede.length; i ++) {
-     var periodo = data[sede];
-      show(sede.length, generation);
+ for (var i=0 ; i<ARQ; i ++) {
+     var periodo = data[generation];
+      var show= function(students.length, ARQ){
+
+         document.get elementByClassName=("enrollment")
+         var topic= document.createElement("p")
+         var imprimir=document.createTextNode(students)
+
+         topic.appendChild (imprimir);
+      }
      }
  }
+
+
 /*
  //listar las generaciones
  for (ciudad in data) {
