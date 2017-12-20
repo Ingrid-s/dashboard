@@ -83,12 +83,13 @@ br{
   font-size: 1em;
 }
 
-section{
-  width: 20%;
-  height: 20%;
-  display:inline-block;
-  background: gray;
+section {
+    width: 20%;
+    height: 20%;
+    display: inline-block;
+    background-color: #eee;
 }
+
 .container1{
   padding: 5%;
 }
