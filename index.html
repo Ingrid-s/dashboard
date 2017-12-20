@@ -5,7 +5,7 @@
     <title>Data Dashboard</title>
     <link rel='stylesheet' href='css/main.css'/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="assets/icons/font-awesome.css">
+
     <script src="https://use.fontawesome.com/024c0ec3b6.js"></script>
   </head>
 
@@ -24,118 +24,123 @@
     </header>
 
     <!--menu desplegable de varias opciones-->
-<nav>
+  <nav>
 		<ul class="left-menu">
-			<li>
-				<a href="#">
-					<i class="fa fa-star-o" aria-hidden="true"></i>
-            <strong>OVERVIEW</strong>
-				</a>
-			</li>
       <li>
-        <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></i>CITY</a>
-          <ul>
-            <li><a href="#"><i class="fa fa-female"></i>AREQUIPA</a>
-              <ul>
-                <li><a href="#"><i class="fa fa-calendar-o" aria-hidden="true"></i></i>2016-I</a></li>
-                <li><a href="#"><i class="fa fa-calendar-o" aria-hidden="true"></i></i>2016-II</a></li>
-                <li><a href="#"><i class="fa fa-calendar-o" aria-hidden="true"></i></i>2016-II</a></li>
-              </ul>
+        <a href="#">
+          <i class="fa fa-star" aria-hidden="true"></i></i>
+            <strong>OVERVIEW</strong>
+        </a>
+      </li>
 
-              <li><a href="#"><i class="fa fa-female"></i>LIMA</a>
-                <ul>
-                  <li><a href="#"><i class="fa fa-calendar-o" aria-hidden="true"></i></i>2016-I</a></li>
-                  <li><a href="#"><i class="fa fa-calendar-o" aria-hidden="true"></i></i>2016-II</a></li>
-                  <li><a href="#"><i class="fa fa-calendar-o" aria-hidden="true"></i></i>2016-II</a></li>
-                </ul>
+      <li>
+        <select id="filtro" onclick="filtro(event)">
+          <option><strong>SEDE</strong></option>
 
-                <li><a href="#"><i class="fa fa-female"></i>SANTIAGO</a>
-                  <ul>
-                    <li><a href="#"><i class="fa fa-calendar-o" aria-hidden="true"></i></i>2016-I</a></li>
-                    <li><a href="#"><i class="fa fa-calendar-o" aria-hidden="true"></i></i>2016-II</a></li>
-                    <li><a href="#"><i class="fa fa-calendar-o" aria-hidden="true"></i></i>2016-II</a></li>
-                  </ul>
+          <option value"arq62"data-sede="ARQ" data-generation=2016-2 class="ARQU">AREQUIPA 2016-II</option>
+          <option value"arq71"data-sede="ARQ" data-generation=2017-1 class="ARQU">AREQUIPA 2017-I</option>
 
-                <li><a href="#"><i class="fa fa-female"></i>CDMX</a>
-                  <ul>
-                    <li><a href="#"><i class="fa fa-calendar-o" aria-hidden="true"></i></i>2016-I</a></li>
-                    <li><a href="#"><i class="fa fa-calendar-o" aria-hidden="true"></i></i>2016-II</a></li>
-                    <li><a href="#"><i class="fa fa-calendar-o" aria-hidden="true"></i></i>2016-II</a></li>
-                  </ul>
-                </ul>
+          <option value"cdmx71"data-sede="CDMX" data-generation=2017-1>CDMX 2017-I</option>
+          <option value"cdmx72"data-sede="CDMX" data-generation=2017-2>CDMX 2017-II</option>
 
-                  <li>
-            				<a href="#">
-            					<i class="fa fa-users" aria-hidden="true"></i>
-                      <!--falta agregar un boton de eliminar estudiante-->
+          <option value"lim62"data-sede="LIM" data-generation=2016-2>LIMA 2016-II</option>
+          <option value"lim71"data-sede="LIM" data-generation=2017-1>LIMA 2017-I</option>
+          <option value"lim72"data-sede="LIM" data-generation=2016-2>LIMA 2017-II</option>
 
-                        <strong>STUDENTS</strong>
-            				</a>
-            			</li>
+          <option value"san62"data-sede="SCL" data-generation=2016-2>SANTIAGO 2016-II</option>
+          <option value"san71"data-sede="SCL" data-generation=2017-1>SANTIAGO 2017-I</option>
+          <option value"san72"data-sede="SCL" data-generation=2017-2>SANTIAGO 2017-II</option>
+        </select>
+      </li>
 
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-book" aria-hidden="true"></i>
-                        <strong>TEACHERS</strong>
-                    </a>
-                  </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-users" aria-hidden="true"></i></i>
+          <strong>STUDENTS</strong>
+        </a>
+      </li>
 
-      </nav>
-      <main>
-        <div class="container1">
-      <section>
-        <h3>Enrollment</h3>
-        <div>
+      <li>
+        <a href="#">
+          <i class="fa fa-book" aria-hidden="true"></i>
+          <strong>TEACHERS</strong>
+        </a>
+      </li>
 
-        </div>
+      <li>
+				<a href="#">
+          <button><strong>Delete Student</strong></button>
+        </a>
+			</li>
+  </nav>
+
+  <main>
+
+    <div class="container1">
+        <section>
+          <h3>Enrollment</h3>
+          <canvas>
         <!--aquí debe ir la gráfica Enrollment-->
-      </section>
+          </canvas>
+        </section>
 
       <section>
         <h3>Archivement</h3>
         <p></p>
         <p></p>
-        <!--aquí debe ir la gráfica Archivement-->
+        <canvas>
+          <!--aquí debe ir la gráfica Achievement-->
+        </canvas>
       </section>
 
       <section>
         <h3>Net Promoter Score</h3>
         <p></p>
         <p></p>
-        <!--aquí debe ir la gráfica NPS-->
+        <canvas>
+          <!--aquí debe ir la gráfica NPS-->
+        </canvas>
       </section>
     </div>
 
-<div class="container2">
+    <div class="container2">
       <section>
-        <h3>Tech Skills</h3>
+        <h3>Tech Skills--</h3>
         <p></p>
         <p></p>
-        <!--aquí debe ir la gráfica Tech Skills-->
+        <canvas>
+          <!--aquí debe ir la gráfica Tech Skills-->
+        </canvas>
       </section>
-</div>
+    </div>
 
-<div class= "container3">
+    <div class= "container3">
       <section>
         <h3>Life Skill</h3>
         <p></p>
         <p></p>
-
-        <!--aquí debe ir la gráfica Life Skills-->
+        <canvas>
+          <!--aquí debe ir la gráfica Life Skills-->
+        </canvas>
       </section>
-<div class= "conatiner4">
+
+    <div class= "conatiner4">
       <section>
         <h3>Student Satisfaction</h3>
         <p></p>
         <p></p>
-        <!--aquí debe ir la gráfica Student Satisfation-->
+        <canvas>
+          <!--aquí debe ir la gráfica Satisfaction-->
+        </canvas>
       </section>
 
       <section class="teachers">
         <h3>Teacher raiting</h3>
         <p></p>
         <p></p>
-        <!--aquí debe ir la gráfica Teacher raiting-->
+        <canvas>
+          <!--aquí debe ir la gráfica Teachers raiting-->
+        </canvas>
       </section>
 
       <section class="jedis">
